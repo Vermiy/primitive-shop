@@ -1,0 +1,123 @@
+.ShopingCart {
+    margin: 3% 10% 0 10%;
+    height: 700px;
+    display: flex;
+}
+
+.UserInformation,
+.Storage {
+    border: 1px solid rgba(0,0,0,0.5);
+    width: 50%;
+    border-radius: 1rem;
+    margin: 1%;
+}
+
+.Storage {
+    overflow: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.InputItem {
+    margin: 3%;
+}
+
+.UserInformation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    h1 {
+        font-size: 16px;
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+    input {
+        border: 1px solid rgba(0,0,0,0.3);
+        padding: 5px;
+        height: 30px;
+        width: 400px;
+        font-weight: bold;
+    }
+
+}
+
+
+.StorageItem {
+    margin: 3%;
+    border: 1px solid rgba(0,0,0,0.5);
+    width: 80%;
+    height: 150px;
+    display: flex;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
+
+    &__image {
+        width: 100%;
+        
+
+        img {
+            border: 1px solid rgba(0,0,0,0.6);
+            border-radius: 1rem;
+            width: calc(70% - 10px); /* Adjusted width to accommodate padding */
+            height: calc(150px - 20px); /* Adjusted height to accommodate padding */
+            object-fit: cover;
+        }
+    }
+
+    &__counter {
+        h3 {
+            color: rgba(0,0,0,0.8);
+        }
+    }
+
+    &__value {
+        width: 100%;
+        text-align: center;
+
+        h1 {
+            color: rgba(0,0,0,0.7); 
+            font-size: 16px;   
+        }
+
+        h2 {
+            color: rgba(0,0,0,0.7); 
+            font-size: 13px;   
+        }
+    }
+}
+
+.Submit {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+
+    h1 {
+        color: rgba(0,0,0,0.7);
+        font-size: 18px;
+    }
+
+    button:hover{
+        cursor: pointer;
+        background-color: rgba(192, 227, 236, 0.7);
+        transition: 0.4s;
+    }
+    button {
+        transition: 0.4s;
+        
+        border: 1px solid rgba(0,0,0,0.3);
+        height: 50px;
+        width: 170px;
+        margin: 10px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        font-size: 17px;
+    }
+}

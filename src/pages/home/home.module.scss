@@ -1,0 +1,104 @@
+.Home {
+    margin: 3% 10% 0 10%;
+    height: 800px;
+    display: flex;
+}
+
+.Menu {
+    width: 30%;
+    border: 1px solid rgba(0,0,0,0.5);
+    height: 700px;
+
+    &__ShopList {
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+
+        button:hover{
+            cursor: pointer;
+            background-color: rgba(192, 227, 236, 0.7);
+            transition: 0.4s;
+        }
+        button {
+            transition: 0.4s;
+            background-color: white;
+            border: 1px solid rgba(0,0,0,0.3);
+            height: 50px;
+            margin: 10px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 17px;
+        }
+    }
+
+    h1 {
+        text-align: center;
+        color: rgba(0,0,0,0.8);
+        font-size: 18px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
+
+.CenterButton {
+    display: flex;
+    justify-content: center;
+}
+
+.GridWrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+    gap: 10px; /* Adjust the gap between items as needed */
+}
+
+.DrugsList {
+    height: 700px;
+    margin-left: 2%;
+    width: 70%;
+    overflow: auto;
+    border: 1px solid rgba(0,0,0,0.5);
+}
+
+.DrugItem {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
+    margin: 10px;
+    border-radius: 0.4rem;
+    width: 290px;
+    height: 260px;
+    border: 1px solid rgba(0,0,0,0.2);
+
+    h4 {
+        font-size: 11px;
+        color:rgba(0,0,0,0.8);
+        margin-left: 10px;
+        margin-top: 0;
+    }
+    h1 {
+        margin-top: 0;
+        font-size: 15px;
+        margin-left: 10px;
+        color:rgba(0,0,0,0.8);
+    }
+
+    button:hover{
+        cursor: pointer;
+        background-color: rgba(192, 227, 236, 0.7);
+        transition: 0.4s;
+    }
+    button {
+        transition: 0.4s;
+        width: 80%;
+        height: 40px;
+        font-size: 14px;
+        font-weight: bold;
+        background-color: white;
+        border: 1px solid rgba(0,0,0,0.3);
+        border-radius: 0.3rem;
+    }
+
+    img {
+        padding: 10px;
+        border-radius: 1rem;
+        width: calc(100% - 20px); /* Adjusted width to accommodate padding */
+        height: calc(150px - 20px); /* Adjusted height to accommodate padding */
+        object-fit: cover;
+    }
+}
